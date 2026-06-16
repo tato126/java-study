@@ -3,6 +3,12 @@
 Java를 직접 만들며·읽으며 익힌 기록. **javaDoc** 표준 라이브러리 익히기.
 ---
 
+### 2026-06-16
+- **javaDoc · java.lang.String** — Step 5(책 덮고 짜기) 시작
+  - `String(char[])` 생성자로 문자 배열 → 문자열 변환 (`StringExample.java`)
+  - 문제 1 이메일 파서: `indexOf("@")`로 위치 찾고 `substring`으로 아이디/도메인 분리, `@`가 없으면(`-1`) 에러 메시지 출력 (`EmailParser.java`)
+  - TODO: `Scanner`로 사용자 입력 받기, 회문·마스킹 문제 풀기
+
 ### 2026-06-15
 - **javaDoc · java.lang.System** — Step 5(졸업 과제): `System.nanoTime()`으로 실행 시간을 재는 Stopwatch 작성 (`src/javaDoc/lang/system/Stopwatch.java`)
   - 측정 도구(`calcElapsedTime`)와 측정 대상(`print`) 분리
