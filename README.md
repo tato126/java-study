@@ -3,6 +3,13 @@
 Java를 직접 만들며·읽으며 익힌 기록. **javaDoc** 표준 라이브러리 익히기.
 ---
 
+### 2026-06-18
+- **javaDoc · java.lang.String** — 사용자 입력 + 회문 검사
+  - `EmailParser`: 하드코딩 대신 `Scanner.nextLine()`으로 이메일 입력 받기 (06-16 TODO 중 Scanner 완료)
+  - 문제 2 회문(팰린드롬): 공백 제거 → `StringBuilder.reverse()` → `equals` 비교 (`Palindrome.java`)
+  - 리뷰에서 확인한 버그: 대소문자 무시(`toLowerCase`) 누락 → `Level`·`Anna`가 "아님"으로 오판정 (수정 예정)
+  - TODO: 회문 대소문자 처리, 마스킹 문제
+
 ### 2026-06-16
 - **javaDoc · java.lang.String** — Step 5(책 덮고 짜기) 시작
   - `String(char[])` 생성자로 문자 배열 → 문자열 변환 (`StringExample.java`)
